@@ -1,0 +1,16 @@
+name = "divine-dawn-3382"
+main = "src/index.js"
+compatibility_date = "2026-10-19"
+workers_dev = true
+
+[[routes]]
+pattern = "orhanstudio.com.tr"
+custom_domain = true
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+run_worker_first = ["/api/*"]
+
+[vars]
+RESEND_FROM = "ORHAN Studio <basvuru@orhanstudio.com.tr>"
